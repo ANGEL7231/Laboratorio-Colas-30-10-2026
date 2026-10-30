@@ -59,4 +59,28 @@ public class ColaEnlazada<T> {
         }
         return frente.dato;
     }
+
+	// Ejercicio de refuerzo 1: Imprimir cola sin destruirla
+    public void imprimirCola() {
+        if (estaVacia()) {
+            System.out.println("La cola está vacía.");
+            return;
+        }
+        
+        Nodo<T> actual = frente;
+        System.out.print("Cola (Frente a Final): [ ");
+        while (actual != null) {
+            System.out.print(actual.dato + " ");
+            actual = actual.siguiente;
+        }
+        System.out.println("]");
+    }
+
+	// Ejercicio de refuerzo 2: Vaciar la cola
+    public void vaciar() {
+        frente = null;
+        fin = null;
+        tamanio = 0;
+    }
+
 }
