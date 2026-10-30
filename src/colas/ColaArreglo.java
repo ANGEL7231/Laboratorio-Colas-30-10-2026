@@ -1,4 +1,12 @@
 package colas; 
+
+/**
+ * Laboratorio Colas
+ * @author Ángel de Jesús Nolasco Rivera
+ * @group GTID244
+ * @date 30/10/2026
+ */
+
 public class ColaArreglo { 
 	private int[] datos; 
 	private int frente; 
